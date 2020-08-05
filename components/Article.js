@@ -114,3 +114,66 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+const allArticles = document.querySelector(".articles")
+
+const articleMaker = function(article){
+
+  // create all elements
+  const articleDiv = document.createElement("div");
+  const articleH2 = document.createElement("h2");
+  const articleDate = document.createElement("p");
+  const articleContent = document.createElement("p");
+  const articleContent2 = document.createElement("p");
+  const articleContent3 = document.createElement("p");
+  const articleButton = document.createElement("span");
+
+  console.log(articleH2);
+
+  // set up structure of article
+  articleDiv.appendChild(articleH2);
+  articleDiv.appendChild(articleDate);
+  articleDiv.appendChild(articleContent);
+  articleDiv.appendChild(articleContent2);
+  articleDiv.appendChild(articleContent3)
+  articleDiv.appendChild(articleButton);
+
+  // add needed class names
+  articleDiv.classList.add("article");
+  articleDate.classList.add("date");
+  articleButton.classList.add("expandButton");
+
+  // set text content usig arguments
+  articleH2.textContent = article.title;
+  articleDate.textContent = article.date;
+  articleContent.textContent = article.firstParagraph;
+  articleContent2.textContent = article.secondParagraph;
+  articleContent3.textContent = article.thirdParagraph;
+  articleButton.textContent = "+";
+
+  // add event listener to toggle article open
+  articleButton.addEventListener("click", function(event){
+    articleDiv.classList.toggle("article-open");
+  });
+
+  return articleDiv;
+
+};
+
+
+
+
+const dummyArticle = [
+  {
+    title: "Panda Bear",
+    date: "August 1, 2020",
+    firstParagraph: "I am a Panda Bear.",
+    secondParagraph: "I like to eat bamboo.",
+    thirdParagraph: "I like to sleep all day."
+  }
+];
+
+
+
+console.log(articleMaker(dummyArticle));
+
