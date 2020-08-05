@@ -168,19 +168,5 @@ data.forEach(function(articleObj){
 
 
 
-// const dummyArticle = [
-//   {
-//     title: "Panda Bear",
-//     date: "August 1, 2020",
-//     firstParagraph: "I am a Panda Bear.",
-//     secondParagraph: "I like to eat bamboo.",
-//     thirdParagraph: "I like to sleep all day."
-//   }
-// ];
-
-
-
-// console.log(articleMaker(dummyArticle));
-
 
 
