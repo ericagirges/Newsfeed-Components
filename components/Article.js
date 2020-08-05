@@ -159,14 +159,17 @@ const articleMaker = function(article){
 
 };
 
+
+
+//add articles to array
+data.push({title: "Pandas Software", date: "August 1st, 2020", firstParagraph: "When the cheese comes out everybody's happy port-salut st. agur blue cheese. Red leicester bavarian bergkase blue castello st. agur blue cheese bavarian bergkase manchego halloumi cheese slices. Cow cheese and biscuits cheese strings fromage frais ricotta melted cheese cut the cheese who moved my cheese. Cottage cheese cheddar stilton cheesecake caerphilly jarlsberg caerphilly emmental. Cauliflower cheese airedale cut the cheese manchego.", secondParagraph: "Smelly cheese halloumi bocconcini. Pepper jack cream cheese cottage cheese mozzarella hard cheese manchego parmesan everyone loves. Rubber cheese bavarian bergkase mozzarella cheese triangles cheese and biscuits cheese strings croque monsieur cut the cheese. Cheese triangles.", thirdParagraph: "Cheese on toast cream cheese croque monsieur. Cheese slices cheesecake goat mozzarella smelly cheese swiss smelly cheese paneer. The big cheese babybel everyone loves dolcelatte mascarpone feta stinking bishop who moved my cheese. Croque monsieur blue castello everyone loves halloumi macaroni cheese caerphilly cheese and biscuits."})
+data.push({title: "Typescript", date: "August 3rd, 2020", firstParagraph: "When the cheese comes out everybody's happy port-salut st. agur blue cheese. Red leicester bavarian bergkase blue castello st. agur blue cheese bavarian bergkase manchego halloumi cheese slices. Cow cheese and biscuits cheese strings fromage frais ricotta melted cheese cut the cheese who moved my cheese. Cottage cheese cheddar stilton cheesecake caerphilly jarlsberg caerphilly emmental. Cauliflower cheese airedale cut the cheese manchego.", secondParagraph: "Smelly cheese halloumi bocconcini. Pepper jack cream cheese cottage cheese mozzarella hard cheese manchego parmesan everyone loves. Rubber cheese bavarian bergkase mozzarella cheese triangles cheese and biscuits cheese strings croque monsieur cut the cheese. Cheese triangles.", thirdParagraph: "Cheese on toast cream cheese croque monsieur. Cheese slices cheesecake goat mozzarella smelly cheese swiss smelly cheese paneer. The big cheese babybel everyone loves dolcelatte mascarpone feta stinking bishop who moved my cheese. Croque monsieur blue castello everyone loves halloumi macaroni cheese caerphilly cheese and biscuits."});
+
 // forEach to loop through data and create each article
 
 data.forEach(function(articleObj){
   const newArticle = articleMaker(articleObj);
   allArticles.appendChild(newArticle);
 });
-
-
-
 
 
