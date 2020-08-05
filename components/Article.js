@@ -128,7 +128,6 @@ const articleMaker = function(article){
   const articleContent3 = document.createElement("p");
   const articleButton = document.createElement("span");
 
-  console.log(articleH2);
 
   // set up structure of article
   articleDiv.appendChild(articleH2);
@@ -160,20 +159,28 @@ const articleMaker = function(article){
 
 };
 
+// forEach to loop through data and create each article
+
+data.forEach(function(articleObj){
+  const newArticle = articleMaker(articleObj);
+  allArticles.appendChild(newArticle);
+});
 
 
 
-const dummyArticle = [
-  {
-    title: "Panda Bear",
-    date: "August 1, 2020",
-    firstParagraph: "I am a Panda Bear.",
-    secondParagraph: "I like to eat bamboo.",
-    thirdParagraph: "I like to sleep all day."
-  }
-];
+// const dummyArticle = [
+//   {
+//     title: "Panda Bear",
+//     date: "August 1, 2020",
+//     firstParagraph: "I am a Panda Bear.",
+//     secondParagraph: "I like to eat bamboo.",
+//     thirdParagraph: "I like to sleep all day."
+//   }
+// ];
 
 
 
-console.log(articleMaker(dummyArticle));
+// console.log(articleMaker(dummyArticle));
+
+
 
