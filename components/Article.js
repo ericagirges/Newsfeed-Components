@@ -4,7 +4,7 @@
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -21,11 +21,11 @@ const data = [
     thirdParagraph: `Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
         naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
         han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
-        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
+        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`,
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -41,11 +41,11 @@ const data = [
     thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights 
         Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven 
         roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot 
-        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
+        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`,
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -69,11 +69,11 @@ const data = [
 
     thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel 
         Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James 
-        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
+        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`,
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -85,8 +85,8 @@ const data = [
 
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
+  },
 ];
 
 /*
@@ -115,10 +115,9 @@ const data = [
   Refresh the page to see the new article.
 */
 
-const allArticles = document.querySelector(".articles")
+const allArticles = document.querySelector(".articles");
 
-const articleMaker = function(article){
-
+const articleMaker = function (article) {
   // create all elements
   const articleDiv = document.createElement("div");
   const articleH2 = document.createElement("h2");
@@ -128,13 +127,12 @@ const articleMaker = function(article){
   const articleContent3 = document.createElement("p");
   const articleButton = document.createElement("span");
 
-
   // set up structure of article
   articleDiv.appendChild(articleH2);
   articleDiv.appendChild(articleDate);
   articleDiv.appendChild(articleContent);
   articleDiv.appendChild(articleContent2);
-  articleDiv.appendChild(articleContent3)
+  articleDiv.appendChild(articleContent3);
   articleDiv.appendChild(articleButton);
 
   // add needed class names
@@ -151,48 +149,55 @@ const articleMaker = function(article){
   articleButton.textContent = "+";
 
   // add event listener to toggle article open
-  articleButton.addEventListener("click", function(event){
+  articleButton.addEventListener("click", function (event) {
     articleDiv.classList.toggle("article-open");
   });
 
   return articleDiv;
-
 };
 
-
-
 //add articles to array
-data.push({title: "Pandas Software", date: "August 1st, 2020", firstParagraph: "When the cheese comes out everybody's happy port-salut st. agur blue cheese. Red leicester bavarian bergkase blue castello st. agur blue cheese bavarian bergkase manchego halloumi cheese slices. Cow cheese and biscuits cheese strings fromage frais ricotta melted cheese cut the cheese who moved my cheese. Cottage cheese cheddar stilton cheesecake caerphilly jarlsberg caerphilly emmental. Cauliflower cheese airedale cut the cheese manchego.", secondParagraph: "Smelly cheese halloumi bocconcini. Pepper jack cream cheese cottage cheese mozzarella hard cheese manchego parmesan everyone loves. Rubber cheese bavarian bergkase mozzarella cheese triangles cheese and biscuits cheese strings croque monsieur cut the cheese. Cheese triangles.", thirdParagraph: "Cheese on toast cream cheese croque monsieur. Cheese slices cheesecake goat mozzarella smelly cheese swiss smelly cheese paneer. The big cheese babybel everyone loves dolcelatte mascarpone feta stinking bishop who moved my cheese. Croque monsieur blue castello everyone loves halloumi macaroni cheese caerphilly cheese and biscuits."})
-data.push({title: "Typescript", date: "August 3rd, 2020", firstParagraph: "When the cheese comes out everybody's happy port-salut st. agur blue cheese. Red leicester bavarian bergkase blue castello st. agur blue cheese bavarian bergkase manchego halloumi cheese slices. Cow cheese and biscuits cheese strings fromage frais ricotta melted cheese cut the cheese who moved my cheese. Cottage cheese cheddar stilton cheesecake caerphilly jarlsberg caerphilly emmental. Cauliflower cheese airedale cut the cheese manchego.", secondParagraph: "Smelly cheese halloumi bocconcini. Pepper jack cream cheese cottage cheese mozzarella hard cheese manchego parmesan everyone loves. Rubber cheese bavarian bergkase mozzarella cheese triangles cheese and biscuits cheese strings croque monsieur cut the cheese. Cheese triangles.", thirdParagraph: "Cheese on toast cream cheese croque monsieur. Cheese slices cheesecake goat mozzarella smelly cheese swiss smelly cheese paneer. The big cheese babybel everyone loves dolcelatte mascarpone feta stinking bishop who moved my cheese. Croque monsieur blue castello everyone loves halloumi macaroni cheese caerphilly cheese and biscuits."});
+data.push({
+  title: "Pandas Software",
+  date: "August 1st, 2020",
+  firstParagraph:
+    "When the cheese comes out everybody's happy port-salut st. agur blue cheese. Red leicester bavarian bergkase blue castello st. agur blue cheese bavarian bergkase manchego halloumi cheese slices. Cow cheese and biscuits cheese strings fromage frais ricotta melted cheese cut the cheese who moved my cheese. Cottage cheese cheddar stilton cheesecake caerphilly jarlsberg caerphilly emmental. Cauliflower cheese airedale cut the cheese manchego.",
+  secondParagraph:
+    "Smelly cheese halloumi bocconcini. Pepper jack cream cheese cottage cheese mozzarella hard cheese manchego parmesan everyone loves. Rubber cheese bavarian bergkase mozzarella cheese triangles cheese and biscuits cheese strings croque monsieur cut the cheese. Cheese triangles.",
+  thirdParagraph:
+    "Cheese on toast cream cheese croque monsieur. Cheese slices cheesecake goat mozzarella smelly cheese swiss smelly cheese paneer. The big cheese babybel everyone loves dolcelatte mascarpone feta stinking bishop who moved my cheese. Croque monsieur blue castello everyone loves halloumi macaroni cheese caerphilly cheese and biscuits.",
+});
+data.push({
+  title: "Typescript",
+  date: "August 3rd, 2020",
+  firstParagraph:
+    "When the cheese comes out everybody's happy port-salut st. agur blue cheese. Red leicester bavarian bergkase blue castello st. agur blue cheese bavarian bergkase manchego halloumi cheese slices. Cow cheese and biscuits cheese strings fromage frais ricotta melted cheese cut the cheese who moved my cheese. Cottage cheese cheddar stilton cheesecake caerphilly jarlsberg caerphilly emmental. Cauliflower cheese airedale cut the cheese manchego.",
+  secondParagraph:
+    "Smelly cheese halloumi bocconcini. Pepper jack cream cheese cottage cheese mozzarella hard cheese manchego parmesan everyone loves. Rubber cheese bavarian bergkase mozzarella cheese triangles cheese and biscuits cheese strings croque monsieur cut the cheese. Cheese triangles.",
+  thirdParagraph:
+    "Cheese on toast cream cheese croque monsieur. Cheese slices cheesecake goat mozzarella smelly cheese swiss smelly cheese paneer. The big cheese babybel everyone loves dolcelatte mascarpone feta stinking bishop who moved my cheese. Croque monsieur blue castello everyone loves halloumi macaroni cheese caerphilly cheese and biscuits.",
+});
 
 // forEach to loop through data and create each article
 
-data.forEach(function(articleObj){
+data.forEach(function (articleObj) {
   const newArticle = articleMaker(articleObj);
   allArticles.appendChild(newArticle);
 });
 
-
 // stretch create toggle hide and show button
-const article = document.querySelectorAll(".article")
-const hideArticleBtn = document.createElement ("button");
+const articles = document.querySelectorAll(".article");
 
-hideArticleBtn.classList.add("hide-btn");
+Array.from(articles).forEach(function (element) {
+  const hideArticleBtn = document.createElement("button");
 
-hideArticleBtn.textContent = "Mark as read";
+  hideArticleBtn.addEventListener("click", () => {
+    element.style.display = "none";
+  });
 
-data.forEach(function(newButton){
-  article.appendChild(newButton)
-});
+  hideArticleBtn.classList.add("hide-btn");
 
-hideArticleBtn.addEventListener("click", event => {
-  const newButton = function() {
-    const articleBlock = document.querySelector(".article");
-    if (articleBlock.style.display === "none") {
-      articleBlock.style.display = "block";
-    } else {
-      articleBlock.style.display = "none";
-    }
-  }
+  hideArticleBtn.textContent = "Mark as read";
 
+  element.appendChild(hideArticleBtn);
 });
