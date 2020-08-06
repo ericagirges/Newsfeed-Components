@@ -173,3 +173,26 @@ data.forEach(function(articleObj){
 });
 
 
+// stretch create toggle hide and show button
+const article = document.querySelectorAll(".article")
+const hideArticleBtn = document.createElement ("button");
+
+hideArticleBtn.classList.add("hide-btn");
+
+hideArticleBtn.textContent = "Mark as read";
+
+data.forEach(function(newButton){
+  article.appendChild(newButton)
+});
+
+hideArticleBtn.addEventListener("click", event => {
+  const newButton = function() {
+    const articleBlock = document.querySelector(".article");
+    if (articleBlock.style.display === "none") {
+      articleBlock.style.display = "block";
+    } else {
+      articleBlock.style.display = "none";
+    }
+  }
+
+});
